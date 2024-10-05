@@ -1,0 +1,71 @@
+<html>
+<head>
+    <style>
+    
+.big-box{
+    flex-wrap: wrap;
+    margin-top: 60px;
+    display: grid;
+    background-color: blueviolet;
+    grid-template-areas: "navbar navbar navbar navbar"
+     "leftside Feedsection Feedsection Chatbox" 
+     "Footersection Footersection Footersection Footersection"
+     "lastsection lastsection lastsection lastsection"
+     
+    
+}
+
+    .box{
+        border: 2px solid #10d5d2;
+        padding: 50px;
+    } 
+#cols{
+    grid-area: navbar;
+    text-align: center;
+    background-color: yellow;
+    
+}
+#cols1{
+    grid-area: leftside;
+    text-align: center;
+    background-color: rgb(221, 18, 136);
+}
+#cols2{
+    grid-area: Feedsection;
+    text-align: center;
+    background-color: rgba(144, 240, 10, 0.188);
+
+}
+  #cols3{
+    grid-area: Chatbox;
+    text-align: center;
+    background-color: #0fd191;
+  } 
+  #cols4{
+    grid-area:Footersection;
+    text-align: center;
+    background-color: blue;
+  }
+  #cols5{
+    grid-area:lastsection;
+    text-align: center;
+    background-color: brown;
+  }
+  
+
+   </style>
+    </head>
+        <body style="background-color: hwb(82 79% 11%);">
+            
+                <div class="big-box">
+            <div class="box" id="cols">HEADER</div>
+            <div class="box" id="cols1">FEATURE1 </div>
+            <div class="box" id="cols2">FEATURE2</div>
+            <div class="box" id="cols3">FEATURE3</div>
+            <div class="box" id="cols4">SIGN UP</div>
+            <div class="box" id="cols5">CONTENT</div>
+        </div>
+    
+        </body>
+    
+</html>
